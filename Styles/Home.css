@@ -1,0 +1,53 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: olive;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      max-height: 900px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  body{
+    background-image: url('http://g02.a.alicdn.com/kf/HTB1R3.5KXXXXXX.XpXXq6xXFXXXQ/send-rolled-8-x8-Red-Brick-Backdrop-rustic-old-vintage-brick-wall-with-wooden-floor-Printed.jpg');
+  }
+
+  #locbt{
+    color: orange;
+    background-color: rgb(153, 51, 51);
+  }
+
+   
+  .container{
+    font-weight: bold;
+    color: orange;
+    font-size: 25px;
+  }
+
+  .well{
+    color: black;
+    font-size: 20px;
+  }
+
+  #demo{
+    background-color: white;
+  }
+
+  #infop{
+    background-color: rgb(153, 51, 51);
+  }

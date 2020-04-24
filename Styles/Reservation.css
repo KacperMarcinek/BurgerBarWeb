@@ -1,0 +1,70 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: olive;
+      padding: 25px;
+    }
+    
+  body{
+    background-image: url('http://g02.a.alicdn.com/kf/HTB1R3.5KXXXXXX.XpXXq6xXFXXXQ/send-rolled-8-x8-Red-Brick-Backdrop-rustic-old-vintage-brick-wall-with-wooden-floor-Printed.jpg');
+    font-weight: bold;
+
+  }
+
+  #locbt{
+    color: olivedrab;
+  }
+
+  .container{
+    color: orange;
+    font-weight: bold;
+ 
+  }
+
+  #menuh2{
+    background-color: rgb(153, 51, 51);
+  }
+
+  #recommh3{
+    background-color: rgb(153, 51, 51);
+  }
+
+  #reservationh2{
+     background-color: rgb(153, 51, 51);
+  }
+   
+  .col-sm-5{
+         background-color: rgb(153, 51, 51);
+         margin-bottom: 25px;
+         height: 525px
+
+  }
+
+  .col-sm-4{
+    margin-bottom: 40px;
+  }
+
+  #leftcol{
+    margin-right: 190px;
+  }
+
+  #infoLabel{
+    margin-bottom: 50px;
+  }
+
+  #guestLabel{
+    margin-bottom: 50px;
+  }
+
+  .btn{
+    font-size: 20px;
+  }
+
+  #list li{
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order Online</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./Styles/OrderOnline.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+   
+    $(document).ready(function(){
+      
+        $("#placeOrder").click(function(){
+          var select1 = $("#sel1").val();
+          var select2 = $("#sel2").val();
+          var select3 = $("#sel3").val();
+          var select4 = $("#sel4").val();
+          var quantity1 = $("#q1").val();
+          var quantity2 = $("#q2").val();
+          var quantity3 = $("#q3").val();
+          var quantity4 = $("#q4").val();
+          var fn = $("#firstname").val();
+          var ln = $("#lastname").val();
+          var email = $("#email").val();
+          
+          if($('#carryout').is(':checked')) {
+          
+            if($('#rbCash').is(':checked')) {
+              alert("Order for: " + " "  + fn + " " + ln + " has been placed." + "\n" + "Email: " + email + "\n" + "Type: Carryout" + "\n" + "Paid with cash" + "\n\n" + "Order details:" + "\n" + select1 + "    " + quantity1 + "\n" + select2 + "    " + quantity2 + "\n" + select3 + "   " + quantity3 + "\n" + select4 + "    " + quantity4 + "\n\n" + "Thank You.");
+            }
+             if($('#rbCard').is(':checked')) {
+              alert("Order for: " + " "  + fn + " " + ln + " has been placed." + "\n" + "Email: " + email + "\n" + "Type: Carryout" + "\n" + "Paid with credit card" + "\n\n" + "Order details:" + "\n" + select1 + "    " + quantity1 + "\n" + select2 + "    " + quantity2 + "\n" + select3 + "   " + quantity3 + "\n" + select4 + "    " + quantity4 + "\n\n" + "Thank You.");
+            }        
+          }
+
+           if($('#delivery').is(':checked')) {
+          
+            if($('#rbCash').is(':checked')) {
+              alert("Order for: " + " "  + fn + " " + ln + " has been placed." + "\n" + "Email: " + email + "\n" + "Type: Delivery" + "\n" + "Paid with cash" + "\n\n" + "Order details:" + "\n" + select1 + "    " + quantity1 + "\n" + select2 + "    " + quantity2 + "\n" + select3 + "   " + quantity3 + "\n" + select4 + "    " + quantity4 + "\n\n" + "Thank You.");
+            }
+             if($('#rbCard').is(':checked')) {
+              alert("Order for: " + " "  + fn + " " + ln + " has been placed." + "\n" + "Email: " + email + "\n" + "Type: Delivery" + "\n" + "Paid with credit card" + "\n\n" + "Order details:" + "\n" + select1 + "    " + quantity1 + "\n" + select2 + "    " + quantity2 + "\n" + select3 + "   " + quantity3 + "\n" + select4 + "    " + quantity4 + "\n\n" + "Thank You.");
+            }        
+          }
+
+        });
+       
+      });
+
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Home.html">Burger Bar</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="OrderOnline.html">Order Online</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="BurgerPopularity.html">Burger Popularity</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <h2 id="orderonlineh2">Order Online</h2>
+             
+  <div class="col-sm-6 text-center">
+    <label id="itemsLabel">Items</label>
+    <br>
+    <br>
+    <div class="form-group">
+      <label for="sel1">Select item and quantity:</label>
+      <select class="form-control" id="sel1">
+        <option>Select an item</option>
+        <option>Grilled Turkey  $9.89</option>
+        <option>Sautéed 'Shroom  $10.89</option>
+        <option>Chili Chili Cheeseburger  $10.99</option>
+        <option>Bacon Cheeseburger  $10.79</option>
+        <option>Double Cheeseburger  $6.99</option>
+        <option>Mac 'N' Cheese Burger  $6.99</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" class="form-control" id="q1">
+    </div>
+    <div class="form-group">
+      <label for="sel2">Select item and quantity:</label>
+      <select class="form-control" id="sel2"> 
+        <option>Select an item</option>
+        <option>Grilled Turkey  $9.89</option>
+        <option>Sautéed 'Shroom  $10.89</option>
+        <option>Chili Chili Cheeseburger  $10.99</option>
+        <option>Bacon Cheeseburger  $10.79</option>
+        <option>Double Cheeseburger  $6.99</option>
+        <option>Mac 'N' Cheese Burger  $6.99</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" class="form-control" id="q2">
+    </div>
+    <div class="form-group">
+      <label for="sel3">Select item and quantity:</label>
+      <select class="form-control" id="sel3">
+        <option>Select an item</option>
+        <option>Grilled Turkey  $9.89</option>
+        <option>Sautéed 'Shroom  $10.89</option>
+        <option>Chili Chili Cheeseburger  $10.99</option>
+        <option>Bacon Cheeseburger  $10.79</option>
+        <option>Double Cheeseburger  $6.99</option>
+        <option>Mac 'N' Cheese Burger  $6.99</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" class="form-control" id="q3">
+    </div>
+    <div class="form-group">
+      <label for="sel4">Select item and quantity:</label>
+      <select class="form-control" id="sel4">
+        <option>Select an item</option>
+        <option>Grilled Turkey  $9.89</option>
+        <option>Sautéed 'Shroom  $10.89</option>
+        <option>Chili Chili Cheeseburger  $10.99</option>
+        <option>Bacon Cheeseburger  $10.79</option>
+        <option>Double Cheeseburger  $6.99</option>
+        <option>Mac 'N' Cheese Burger  $6.99</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" class="form-control" id="q4">
+    </div>
+    <br>
+    <br>
+  </div>
+
+  
+  <div class="col-sm-5">
+     <label>Information</label>
+     <br>
+     <br>
+     <div>
+      <label>First Name:</label>
+      <input type="text" class="form-control" id="firstname">
+    </div>
+    <br>
+    <br>
+     <div>
+      <label>Last Name:</label>
+      <input type="text" class="form-control" id="lastname">
+    </div>
+    <br>
+    <br>
+    <div>
+      <label>Email:</label>
+      <input type="text" class="form-control" id="email">
+    </div>
+    <br>
+    <br>
+    <div class="checkbox checkbox-inline">
+      <label><input type="checkbox" name="carryout" value="" id="carryout">Carryout</label>
+      <label><input type="checkbox" name="delivery" value="" id="delivery">Delivery</label>
+    </div>
+    <br>
+    <br>
+    <div class="radio">
+      <label><input type="radio" name="optradio" id="rbCash">Cash</label>
+      <br>
+      <label><input type="radio" name="optradio" id="rbCard">Credit Card</label>
+    </div>
+    <br>
+    <div>
+      <button type="button" class="btn" id="placeOrder">Place Order</button>
+    </div>  
+  </div>
+</div>
+
+
+
+  <div class="container text-center">    
+  <h3 id="recommh3">Recommended</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="./Images/grilled_turkey.jpg" class="img-responsive" style="width:100%" alt="Image">
+    
+    </div>
+    <div class="col-sm-4"> 
+      <img src="./Images/bacon_cheese.jpg" class="img-responsive" style="width:100%" alt="Image">
+         
+    </div>
+    <div class="col-sm-4">
+      <img src="./Images/double_cheese.jpg" class="img-responsive" style="width:100%" alt="Image"> 
+      
+    </div>
+  </div>
+</div>
+<br>
+
+<footer class="container-fluid text-center">
+  <p>Casper Marcinek</p>
+</footer>
+
+</body>
+</html>
